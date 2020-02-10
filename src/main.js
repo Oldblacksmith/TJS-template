@@ -1,8 +1,12 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Index from './index.vue'
+import { Popup } from 'vant'
+import 'vant/lib/index.css'
+
+Vue.use(Popup)
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  render: h => h(Index),
 }).$mount('#app')
